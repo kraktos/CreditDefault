@@ -1,0 +1,11 @@
+# ============================================= Files and Folders ===================================================== #
+
+# loaction of training and test
+training: RAcredit_train.csv
+testing: RAcredit_test.csv
+
+# absolute correlation coefficient for the correlated features.
+corr.thresh: 0.75
+
+# allowed NA values in a column
+NA.level: 0.65
