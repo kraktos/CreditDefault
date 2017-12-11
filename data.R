@@ -11,7 +11,7 @@
 get.data <- function(path, seperator){
   
   df <- read.csv(
-    file = path,
+    file = file.path(path, fsep = .Platform$file.sep),
     header = TRUE,
     sep = seperator,
     quote = "\"'",

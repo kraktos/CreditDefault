@@ -22,6 +22,6 @@ options(scipen = 999)
 
 # load the config file (YAML) and return the configuration object
 get.configurations <- function(path){
-  configurations <- yaml.load_file(path)
+  configurations <- yaml.load_file(file.path(path, fsep = .Platform$file.sep))
   return(configurations)
 }
